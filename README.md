@@ -1,1 +1,1 @@
-# 파이썬을 이용한 침팬치 기억력 게임
+# 파이썬을 이용한 Chimpanzee memory test
