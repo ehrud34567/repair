@@ -103,7 +103,10 @@ def display_game_screen():
             pygame.draw.rect(screen,WHITE, rect) #버튼 사각형 그리기
         else:
              #실제 숫자 텍스트
-            cell_text=game_font.render(str(idx),True,WHITE)
+            colors = [WHITE, (255, 0, 0), (0, 255, 0), (0, 0, 255)]  # 흰색과 기본 RGB 컬러 추가
+            cell_color = choice(colors)  # 랜덤 색상 선택
+            cell_text = game_font.render(str(idx), True, cell_color)
+
             text_rect=cell_text.get_rect(center=rect.center)
             screen.blit(cell_text,text_rect)
 
